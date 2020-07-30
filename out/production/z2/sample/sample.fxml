@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tvTable" layoutX="14.0" layoutY="14.0" prefHeight="270.0" prefWidth="285.0">
+         <columns>
+            <TableColumn fx:id="tcK" prefWidth="140.0" text="K[i]" />
+            <TableColumn fx:id="tcY" prefWidth="140.0" text="Y[i]" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="160.0" fitWidth="384.0" layoutX="306.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/formula.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="306.0" layoutY="104.0" text="a=" />
+      <Label layoutX="304.0" layoutY="131.0" text="b=" />
+      <TextField fx:id="tfA" layoutX="328.0" layoutY="100.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="tfB" layoutX="328.0" layoutY="127.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextArea editable="false" layoutX="437.0" layoutY="85.0" prefHeight="83.0" prefWidth="249.0" style="-fx-border-color: #000000;" text="Данный пример имеет решение, &#10;при условии, что: &#10;1. К,а,b одновременно не равны нулю &#10;2. а и b одновременно не равны нулю">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Button fx:id="bFill" layoutX="307.0" layoutY="200.0" mnemonicParsing="false" onAction="#bFillClick" prefHeight="36.0" prefWidth="196.0" text="Заполнить случайными числами" />
+      <Button fx:id="bProcess" layoutX="307.0" layoutY="246.0" mnemonicParsing="false" onAction="#bProcessClick" prefHeight="36.0" prefWidth="196.0" text="Выполнить задание" />
+      <Button fx:id="bClear" layoutX="624.0" layoutY="199.0" mnemonicParsing="false" onAction="#bClearClick" prefHeight="36.0" prefWidth="62.0" text="Очистка" />
+      <Button fx:id="bExit" layoutX="624.0" layoutY="246.0" mnemonicParsing="false" onAction="#bExitClick" prefHeight="36.0" prefWidth="62.0" text="Выход" />
+      <Label layoutX="511.0" layoutY="218.0" prefHeight="36.0" prefWidth="108.0" text="МОЖНО ВВОДИТЬ ТОЛЬКО ЧИСЛА!" wrapText="true" />
+   </children>
+</AnchorPane>
